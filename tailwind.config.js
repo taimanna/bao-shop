@@ -1,10 +1,10 @@
 module.exports = {
   mode: 'jit',
-  purge: [
+  content: [
+    './src/**/*.{html,js}',
     './public/*.html',
     './src/**/*.{js,jsx,ts,tsx,vue}',
   ],
-  content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
       fontFamily: {
