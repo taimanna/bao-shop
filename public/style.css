@@ -1,0 +1,9 @@
+body {
+  background-image: url(https://assets.bigcartel.com/theme_images/70145775/header-bg.png?auto=format&fit=max&h=200&w=200);
+  background-repeat: repeat-x;
+  background-size: 200px 200px;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
