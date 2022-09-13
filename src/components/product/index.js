@@ -4,7 +4,7 @@ const Product = ({ name, price, src }) => {
       <a href="/" className="hover:text-5b8 hover:opacity-95">
         <div className="px-[8px] py-[16px]">
           <img
-            className="h-[450px] w-[450px] rounded-[4px] object-cover md:h-[340px] md:w-[340px]"
+            className="h-[450px] w-[450px] rounded-[4px] object-cover md:h-[340px] md:w-[340px] mx-auto"
             alt={name}
             src={src}
           />
