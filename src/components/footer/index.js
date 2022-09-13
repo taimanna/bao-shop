@@ -1,25 +1,4 @@
-import axios from 'axios'
-
 const options = ['Home', 'Products', 'About', 'FAQ', 'Contact', 'Cart']
-
-var client_id = '593cf08483ba4c23bec8021016be638d'; // Your client id
-var client_secret = '62810795b365430aa9785fdc47737fce'; // Your secret
-var redirect_uri = 'http://localhost:3000/'; // Your redirect uri
-// var scopes = \'user-read-private user-read-email\';
-
-axios
-  .get('https://api.spotify.com/v1/', {
-    params: {
-      response_type: 'code',
-      client_id: client_id,
-      redirect_uri: redirect_uri,
-      state: state
-    },
-  })
-  .then((response) => {
-    console.log(response)
-  })
-  .catch((err) => console.log(err))
 
 const Footer = () => {
   return (
