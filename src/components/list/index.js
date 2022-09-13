@@ -1,59 +1,61 @@
-import Product from "../product";
+import Product from '../product'
+import products from '../../assets/images/products'
 
-const products = [
+const productDetails = [
   {
-    name: "BAO BOOBA MOUSEPAD",
-    price: "$45.00",
-    src: "https://assets.bigcartel.com/product_images/320400357/Oppai.png?auto=format&fit=max&w=346",
+    name: 'BAO BOOBA MOUSEPAD',
+    price: '$45.00',
+    src: products.mousepad,
   },
   {
-    name: "FISH BOWL CHARM",
-    price: "$12.00",
-    src: "https://assets.bigcartel.com/product_images/320399451/charms.png?auto=format&fit=max&w=346",
+    name: 'FISH BOWL CHARM',
+    price: '$12.00',
+    src: products.charms,
   },
   {
-    name: "SAILOR TSHIRT",
-    price: "$40.00",
-    src: "https://assets.bigcartel.com/product_images/320398917/TShirt+Design.png?auto=format&fit=max&w=346",
+    name: 'SAILOR TSHIRT',
+    price: '$40.00',
+    src: products.tShirt,
   },
   {
-    name: "BAOBBLE BATH ENAMEL PIN",
-    price: "$15.00",
-    src: "https://assets.bigcartel.com/product_images/320400654/Enamel+Pin.png?auto=format&fit=max",
+    name: 'BAOBBLE BATH ENAMEL PIN',
+    price: '$15.00',
+    src: products.enamelPin,
   },
   {
-    name: "POSTER - NAIZOTAN",
-    price: "$12.00",
-    src: "https://assets.bigcartel.com/product_images/320400792/Poster+Design+naizotan.png?auto=format&fit=max",
+    name: 'POSTER - NAIZOTAN',
+    price: '$12.00',
+    src: products.posterNaizotan,
   },
   {
-    name: "FISH BOWL VINYL DECAL",
-    price: "$10.00",
-    src: "https://assets.bigcartel.com/product_images/320400876/Sticker+A.png?auto=format&fit=max",
+    name: 'FISH BOWL VINYL DECAL',
+    price: '$10.00',
+    src: products.stickerA,
   },
   {
-    name: "BAOBBLE BATH VINYL DECAL",
-    price: "$10.00",
-    src: "https://assets.bigcartel.com/product_images/320400489/Sticker+B.png?auto=format&fit=max",
+    name: 'BAOBBLE BATH VINYL DECAL',
+    price: '$10.00',
+    src: products.stickerB,
   },
   {
-    name: "POSTER - YAMPA",
-    price: "$12.00",
-    src: "https://assets.bigcartel.com/product_images/320400840/Poster+Design+yampa.png?auto=format&fit=max",
+    name: 'POSTER - YAMPA',
+    price: '$12.00',
+    src: products.posterYampa,
   },
   {
-    name: "POSTER - KANEKIRU",
-    price: "$12.00",
-    src: "https://assets.bigcartel.com/product_images/320400726/Poster+Design+kanekiru.png?auto=format&fit=max",
+    name: 'POSTER - KANEKIRU',
+    price: '$12.00',
+    src: products.posterKanekiru,
   },
-];
+]
 
 const List = () => {
   return (
     <>
-      <div className="flex flex-wrap justify-center mx-auto max-w-[1100px] pb-[60px]">
-        {products.map((product) => (
+      <div className="mx-auto grid max-w-[1100px] grid-cols-1 pb-[60px] md:grid-cols-2 lg:grid-cols-3">
+        {productDetails.map((product, index) => (
           <Product
+            key={index}
             name={product.name}
             price={product.price}
             src={product.src}
@@ -61,7 +63,7 @@ const List = () => {
         ))}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default List;
+export default List
