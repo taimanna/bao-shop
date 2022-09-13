@@ -1,8 +1,8 @@
-const options = ["Products", "About", "FAQ", "Contact", "Cart"];
+const options = ['Products', 'About', 'FAQ', 'Contact', 'Cart']
 
 const Header = () => {
   return (
-    <div className="w-screen mx-auto">
+    <div className="mx-auto">
       <div className="mt-[86px] mb-[55px] text-center">
         <a href="/" className="inline-block">
           <img
@@ -15,8 +15,11 @@ const Header = () => {
 
       <div>
         <ul className="mb-[25px] text-center text-555">
-          {options.map((option) => (
-            <li className="inline-block p-[8px] font-varela text-[14px] font-bold uppercase tracking-[1px] hover:text-5b8">
+          {options.map((option, index) => (
+            <li
+              key={index}
+              className="inline-block p-[8px] font-varela text-[14px] font-bold uppercase tracking-[1px] hover:text-5b8"
+            >
               <a href="/" className="p-[8px]">
                 {option}
               </a>
@@ -33,7 +36,7 @@ const Header = () => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
