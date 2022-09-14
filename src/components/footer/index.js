@@ -3,7 +3,7 @@ const options = ['Home', 'Products', 'About', 'FAQ', 'Contact', 'Cart']
 const Footer = () => {
   return (
     <div className="mx-auto flex max-w-[1100px] flex-col pb-[40px]">
-      <div className="h-[1px] w-[1100px] bg-black"></div>
+      <div className="h-[1px] w-[720px]  lg:w-[1100px] bg-black mx-auto"></div>
       <ul className="mb-[24px] flex justify-center pt-[40px]">
         {options.map((option, index) => {
           return (
